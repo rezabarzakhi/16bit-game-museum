@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>museum home</title>
+<link rel="stylesheet" href="../design/tokens.css">
+<link rel="stylesheet" href="../design/components.css">
+<style>
+body { background: var(--bg); color: var(--text); font-family: var(--font-fa); margin: 0; padding: 2rem; }
+.wrap { max-width: 960px; margin-inline: auto; display: grid; gap: 1.5rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+header { display: flex; justify-content: space-between; align-items: center; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><strong>museum</strong><nav><a href="./index.html">home</a> | <a href="./about.html">about</a></nav></header>
+<h1>silent archive skeleton</h1>
+<div id="list" class="cards"></div>
+<section><h2>newsletter</h2><form class="newsletter-form"><input type="email" placeholder="email"><button type="submit">join</button></form></section>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>

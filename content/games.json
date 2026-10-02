@@ -1,0 +1,35 @@
+﻿[
+  {
+    "slug": "sample-game",
+    "title": "Sample Game",
+    "summary": "Short editorial summary",
+    "controls": ["Move", "Jump", "Pause"],
+    "source_url": "https://example.com",
+    "license": "CC0",
+    "license_proof": "Placeholder proof for local skeleton only",
+    "author": "Example Author",
+    "tags": ["platformer", "homebrew"]
+  },
+  {
+    "slug": "pixel-quest",
+    "title": "Pixel Quest",
+    "summary": "Second placeholder entry for layout check",
+    "controls": ["Move", "Action", "Pause"],
+    "source_url": "https://example.com",
+    "license": "CC-BY",
+    "license_proof": "Placeholder proof for local skeleton only",
+    "author": "Second Author",
+    "tags": ["adventure", "homebrew"]
+  },
+  {
+    "slug": "maze-runner",
+    "title": "Maze Runner",
+    "summary": "Third placeholder entry for layout check",
+    "controls": ["Move", "Pause"],
+    "source_url": "https://example.com",
+    "license": "MIT",
+    "license_proof": "Placeholder proof for local skeleton only",
+    "author": "Third Author",
+    "tags": ["puzzle", "homebrew"]
+  }
+]
