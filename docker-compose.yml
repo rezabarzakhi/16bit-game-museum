@@ -5,9 +5,9 @@
     ports:
       - "8080:80"
     volumes:
-      - ../site:/usr/share/nginx/html:ro
-      - ../design:/usr/share/nginx/html/../design:ro
-      - ../content:/usr/share/nginx/html/../content:ro
+      - ./site:/usr/share/nginx/html:ro
+      - ./design:/usr/share/nginx/html/design:ro
+      - ./content:/usr/share/nginx/html/content:ro
     networks:
       - proxy
 networks:
