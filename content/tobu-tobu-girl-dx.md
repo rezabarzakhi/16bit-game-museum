@@ -1,16 +1,16 @@
-﻿# Tobu Tobu Girl Deluxe
+# Tobu Tobu Girl Deluxe
 
 ## داستان
 
-Tobu Tobu Girl Deluxe نسخه بهبودیافته بازی Tobu Tobu Girl است.
-این نسخه با گرافیک رنگی برای Game Boy Color ساخته شده است.
-مراحل جدید و قابلیت‌های تازه به بازی اضافه شده‌اند.
+Tobu Tobu Girl Deluxe نسخه پیشرفته‌تر بازی Tobu Tobu Girl است.
+بازی با گرافیک رنگی و مراحل جدید عرضه شده است.
+نقش اصلی همچنان یک گربه است که باید از موانع عبور کند.
 
 ## تاریخچه
 
-بازی در دسامبر ۲۰۱۸ منتشر شد.
-سازنده پس از موفقیت نسخه اصلی، نسخه Deluxe را ساخت.
-گرافیک رنگی و صداهای بهبودیافته از ویژگی‌های اصلی این نسخه هستند.
+این نسخه توسط استودیوی Tangram Games ساخته شده است.
+در سال ۲۰۱۸ به صورت رایگان منتشر شد.
+نسخه Deluxe نسبت به نسخه اصلی بهبودهای بسیاری داشته است.
 
 ## راهنمای کنترل
 
@@ -23,11 +23,8 @@ Tobu Tobu Girl Deluxe نسخه بهبودیافته بازی Tobu Tobu Girl اس
 این بازی به صورت رایگان توزیع می‌شود.
 کد منبع با مجوز MIT است.
 دارایی‌ها شامل تصاویر و صداها با مجوز CC BY 4.0 است.
-نسخه اولیه نیز با مجوز مشابه منتشر شده بود.
 
 ## منابع
 
-```text
-https://github.com/SimonLarsen/tobutobugirl-dx
-https://tangramgames.itch.io/tobu-tobu-girl-deluxe
-```
+- GitHub: https://github.com/SimonLarsen/tobutobugirl-dx
+- itch.io: https://tangramgames.itch.io/tobu-tobu-girl-deluxe

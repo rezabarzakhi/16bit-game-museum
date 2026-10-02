@@ -1,9 +1,9 @@
-﻿[
+[
     {
         "slug":  "tobu-tobu-girl",
         "title":  "Tobu Tobu Girl",
         "console":  "Game Boy",
-        "summary":  "بازی پلتفرمر-آرکید برای گیم‌بوی. نقش اصلی یک گربه است که باید از موانع عبور کند و به بالا صعود کند.",
+        "summary":  "بازی پلتفرمر-آرکید کلاسیک برای گیم‌بوی. نقش اصلی یک گربه است که باید از موانع عبور کند و به بالا صعود کند.",
         "controls":  [
                          "جهت‌دار",
                          "A",
@@ -28,7 +28,7 @@
         "slug":  "tobu-tobu-girl-dx",
         "title":  "Tobu Tobu Girl Deluxe",
         "console":  "Game Boy Color",
-        "summary":  "نسخه بهبودیافته بازی Tobu Tobu Girl با گرافیک رنگی و مراحل جدید.",
+        "summary":  "نسخه پیشرفته‌تر بازی Tobu Tobu Girl با گرافیک رنگی و مراحل جدید.",
         "controls":  [
                          "جهت‌دار",
                          "A",
@@ -53,7 +53,7 @@
         "slug":  "geometrix",
         "title":  "Geometrix",
         "console":  "Game Boy Color",
-        "summary":  "بازی پازل ساده برای گیم‌بوی. هدف ساخت ردیف یا ستون از ۳ فرم هندسی یکسان است.",
+        "summary":  "بازی پازل هندسی رنگارنگ. باید شکل‌های هندسی را با چرخش جور کنید.",
         "controls":  [
                          "جهت‌دار",
                          "A",
@@ -65,7 +65,7 @@
         "emu_core":  "gb",
         "source_url":  "https://github.com/AntonioND/geometrix",
         "license":  "GPL v3",
-        "license_proof":  "کد منبع با مجوز GPL v3 منتشر شده است",
+        "license_proof":  "کد منبع با مجوز GPL v3 منتشر شده",
         "author":  "AntonioND/SkyLyrac",
         "tags":  [
                      "puzzle",
@@ -74,52 +74,52 @@
         "published":  "2015-01-01"
     },
     {
-        "source_url":  "https://github.com/AntonioND/ucity",
-        "author":  "AntonioND/SkyLyrac",
-        "license_proof":  "کد منبع با مجوز GPL v3+ و دارایی‌ها با مجوز CC BY-SA 4.0",
+        "slug":  "ucity",
+        "title":  "uCity",
+        "console":  "Game Boy Color",
+        "summary":  "بازی ساخت و مدیریت شهر. شهر خود را بسازید و مدیریت کنید.",
         "controls":  [
                          "جهت‌دار",
                          "A",
                          "B",
                          "Start"
                      ],
-        "console":  "Game Boy Color",
-        "title":  "uCity",
+        "cover_path":  "covers/ucity.svg",
+        "rom_path":  "../roms/ucity.gbc",
+        "emu_core":  "gb",
+        "source_url":  "https://github.com/AntonioND/ucity",
+        "license":  "GPL v3+",
+        "license_proof":  "کد منبع با مجوز GPL v3+ و دارایی‌ها با مجوز CC BY-SA 4.0",
+        "author":  "AntonioND/SkyLyrac",
         "tags":  [
                      "simulation",
                      "city-builder",
                      "homebrew"
                  ],
-        "rom_path":  "../roms/ucity.gbc",
-        "published":  "2018-01-01",
-        "summary":  "بازی ساخت شهر برای گیم‌بوی کالر. شهر خود را بسازید و مدیریت کنید.",
-        "slug":  "ucity",
-        "emu_core":  "gb",
-        "cover_path":  "covers/ucity.svg",
-        "license":  "GPL v3+"
+        "published":  "2018-01-01"
     },
     {
-        "source_url":  "https://rv6502.ca/post/2012/01/26/brickster-for-game-boy-color/",
-        "author":  "Stéphane Hockenhull (rv6502)",
-        "license_proof":  "بازی به صورت رایگان برای دانلود، کپی، توزیع و بازی منتشر شده است",
+        "slug":  "brickster",
+        "title":  "Brickster",
+        "console":  "Game Boy Color",
+        "summary":  "بازی پازل آجری کلاسیک. آجرها را با اتصال کنار هم ویران کنید.",
         "controls":  [
                          "جهت‌دار",
                          "A",
                          "Start"
                      ],
-        "console":  "Game Boy Color",
-        "title":  "Brickster",
+        "cover_path":  "covers/brickster.svg",
+        "rom_path":  "../roms/brickster.gbc",
+        "emu_core":  "gb",
+        "source_url":  "https://rv6502.ca/post/2012/01/26/brickster-for-game-boy-color/",
+        "license":  "Free to distribute",
+        "license_proof":  "سازنده به صورت رسمی توزیع رایگان بازی را تأیید کرده است",
+        "author":  "Stéphane Hockenhull (rv6502)",
         "tags":  [
                      "puzzle",
                      "arcade",
                      "homebrew"
                  ],
-        "rom_path":  "../roms/brickster.gbc",
-        "published":  "1999-01-01",
-        "summary":  "بازی آجرشکن برای گیم‌بوی کالر. بازی ساده و سرگرم‌کننده‌ای که در سال ۱۹۹۹ ساخته شده است.",
-        "slug":  "brickster",
-        "emu_core":  "gb",
-        "cover_path":  "covers/brickster.svg",
-        "license":  "Free to distribute"
+        "published":  "1999-01-01"
     }
 ]

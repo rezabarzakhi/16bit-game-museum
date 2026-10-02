@@ -1,44 +1,49 @@
-﻿{
-    "tobu-tobu-girl":  {
-                           "license":  "MIT + CC BY 4.0",
-                           "proof":  "لینک: https://github.com/SimonLarsen/tobutobugirl/blob/master/LICENSE",
-                           "source_url":  "https://github.com/SimonLarsen/tobutobugirl",
-                           "itch_url":  "https://tangramgames.itch.io/tobutobugirl",
-                           "author":  "Tangram Games",
-                           "reviewed_at":  "2026-10-02",
-                           "notes":  "کد منبع با مجوز MIT و دارایی‌ها با مجوز CC BY 4.0. بازی به صورت رایگان توسط سازنده منتشر شده است."
-                       },
-    "tobu-tobu-girl-dx":  {
-                              "license":  "MIT + CC BY 4.0",
-                              "proof":  "لینک: https://github.com/SimonLarsen/tobutobugirl-dx/blob/master/LICENSE",
-                              "source_url":  "https://github.com/SimonLarsen/tobutobugirl-dx",
-                              "itch_url":  "https://tangramgames.itch.io/tobu-tobu-girl-deluxe",
-                              "author":  "Tangram Games",
-                              "reviewed_at":  "2026-10-02",
-                              "notes":  "نسخه بهبودیافته با گرافیک رنگی. مجوز مشابه نسخه اصلی."
-                          },
-    "geometrix":  {
-                      "license":  "GPL v3",
-                      "proof":  "لینک: https://github.com/AntonioND/geometrix/blob/master/LICENSE.txt",
-                      "source_url":  "https://github.com/AntonioND/geometrix",
-                      "author":  "AntonioND/SkyLyrac",
-                      "reviewed_at":  "2026-10-02",
-                      "notes":  "بازی پازل با مجوز GPL v3. کد منبع آزادانه در دسترس است."
-                  },
-    "ucity":  {
-                  "proof":  "لینک: https://github.com/AntonioND/ucity/blob/master/LICENSE.txt",
-                  "notes":  "بازی ساخت شهر با مجوز GPL v3+. دارایی‌ها با مجوز CC BY-SA 4.0.",
-                  "reviewed_at":  "2026-10-02",
-                  "source_url":  "https://github.com/AntonioND/ucity",
-                  "author":  "AntonioND/SkyLyrac",
-                  "license":  "GPL v3+"
-              },
-    "brickster":  {
-                      "proof":  "لینک: https://rv6502.ca/post/2012/01/26/brickster-for-game-boy-color/",
-                      "notes":  "بازی به صورت رایگان برای دانلود، کپی، توزیع و بازی در فرم بدون تغییر منتشر شده است.",
-                      "reviewed_at":  "2026-10-02",
-                      "source_url":  "https://rv6502.ca/post/2012/01/26/brickster-for-game-boy-color/",
-                      "author":  "Stéphane Hockenhull (rv6502)",
-                      "license":  "Free to distribute"
-                  }
+{
+    "games":  {
+                  "tobu-tobu-girl":  {
+                                         "license":  "MIT + CC BY 4.0",
+                                         "title":  "Tobu Tobu Girl",
+                                         "proof":  {
+                                                       "note":  "کد منبع با مجوز MIT است. دارایی‌ها (تصاویر و صداها) با مجوز CC BY 4.0 است. سازنده از انتشار مجدد استقبال می‌کند.",
+                                                       "source":  "https://github.com/SimonLarsen/tobutobugirl"
+                                                   },
+                                         "author":  "Tangram Games (Simon Larsen)"
+                                     },
+                  "ucity":  {
+                                "license":  "GPL v3+",
+                                "title":  "uCity",
+                                "proof":  {
+                                              "note":  "کد منبع با مجوز GPL v3+ و دارایی‌ها با مجوز CC BY-SA 4.0 است.",
+                                              "source":  "https://github.com/AntonioND/ucity"
+                                          },
+                                "author":  "AntonioND/SkyLyrac (Antonio Nino Diaz)"
+                            },
+                  "brickster":  {
+                                    "license":  "Free to distribute",
+                                    "title":  "Brickster",
+                                    "proof":  {
+                                                  "note":  "سازنده به صورت رسمی توزیع رایگان بازی را تأیید کرده است.",
+                                                  "source":  "https://rv6502.ca/post/2012/01/26/brickster-for-game-boy-color/"
+                                              },
+                                    "author":  "Stéphane Hockenhull (rv6502)"
+                                },
+                  "tobu-tobu-girl-dx":  {
+                                            "license":  "MIT + CC BY 4.0",
+                                            "title":  "Tobu Tobu Girl Deluxe",
+                                            "proof":  {
+                                                          "note":  "کد منبع با مجوز MIT است. دارایی‌ها با مجوز CC BY 4.0 است.",
+                                                          "source":  "https://github.com/SimonLarsen/tobutobugirl-dx"
+                                                      },
+                                            "author":  "Tangram Games (Simon Larsen)"
+                                        },
+                  "geometrix":  {
+                                    "license":  "GPL v3",
+                                    "title":  "Geometrix",
+                                    "proof":  {
+                                                  "note":  "کد منبع با مجوز GPL v3 منتشر شده است.",
+                                                  "source":  "https://github.com/AntonioND/geometrix"
+                                              },
+                                    "author":  "AntonioND/SkyLyrac (Antonio Nino Diaz)"
+                                }
+              }
 }

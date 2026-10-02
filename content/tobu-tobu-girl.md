@@ -1,4 +1,4 @@
-﻿# Tobu Tobu Girl
+# Tobu Tobu Girl
 
 ## داستان
 
@@ -27,7 +27,5 @@ Tobu Tobu Girl یک بازی پلتفرمر-آرکید برای کنسول Game 
 
 ## منابع
 
-```text
-https://github.com/SimonLarsen/tobutobugirl
-https://tangramgames.itch.io/tobutobugirl
-```
+- GitHub: https://github.com/SimonLarsen/tobutobugirl
+- itch.io: https://tangramgames.itch.io/tobutobugirl
