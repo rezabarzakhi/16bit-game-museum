@@ -1,4 +1,13 @@
 ﻿node_modules/
 .next/
 dist/
-
+roms/*.gb
+roms/*.gbc
+roms/*.gba
+roms/*.sfc
+roms/*.smc
+roms/*.md
+roms/*.gen
+roms/*.sms
+*.log
+.DS_Store

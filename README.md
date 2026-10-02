@@ -1,38 +1,52 @@
-﻿# 16bit Game Museum
+﻿# موزه بازی خانگی
 
-Silent archive of homebrew games.
+آرشیو خاموش بازی‌های خانگی رایگان با مقاله فارسی.
 
-## Design
-
-```text
-design/tokens.css
-design/components.css
-design/preview.html
-```
-
-## Content
+## راه‌اندازی محلی
 
 ```text
-content/games.json
-content/licenses.json
-content/*.md
+python -m http.server 8090
 ```
 
-## Site
+سپس مرورگر را باز کنید:
 
 ```text
-site/index.html
-site/game.html
-site/about.html
-site/legal.html
-site/rss.xml
-site/sitemap.xml
+http://localhost:8090/site/index.html
 ```
 
-## Run locally
+## اضافه کردن فایل بازی
 
 ```text
-docker compose up -d
+.\download-roms.ps1
 ```
 
-Open http://localhost:8080/site/index.html
+فایل‌های بازی در پوشه `roms/` ذخیره می‌شوند.
+
+## ساختار پروژه
+
+```text
+design/          سامانه طراحی
+site/            صفحات تارنما
+content/         محتوای بازی‌ها و مقالات
+roms/            فایل‌های بازی (در git نیست)
+```
+
+## بازی‌های موجود
+
+```text
+Tobu Tobu Girl (Game Boy) - MIT + CC BY 4.0
+Tobu Tobu Girl Deluxe (Game Boy Color) - MIT + CC BY 4.0
+```
+
+## شبیه‌ساز
+
+از EmulatorJS استفاده می‌شود که رایگان و متن‌باز است.
+
+```text
+https://cdn.emulatorjs.org/
+```
+
+## قوانین انتشار
+
+فقط بازی‌های خانگی و آزاد با مدرک مجوز منتشر می‌شود.
+در صورت اعتراض سازنده، بازی در همان روز حذف می‌شود.
