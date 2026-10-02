@@ -1,0 +1,53 @@
+﻿.game-frame {
+  background: var(--surface);
+  border: 4px solid var(--border);
+  border-radius: var(--radius-md);
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+}
+.game-frame__start {
+  background: var(--accent);
+  color: #0B1026;
+  font-weight: 800;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-sm);
+  border: 0;
+  cursor: pointer;
+}
+.game-frame__start:focus-visible {
+  outline: 3px solid var(--paper);
+  outline-offset: 3px;
+}
+.game-card {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.game-card__cover {
+  aspect-ratio: 4 / 3;
+  background: #0B1026;
+  image-rendering: pixelated;
+}
+.tag-chip {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text);
+}
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+}
+.pixelated {
+  image-rendering: pixelated;
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none;
+    transition: none;
+    scroll-behavior: auto;
+  }
+}

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>16bit museum design preview</title>
+<link rel="stylesheet" href="./tokens.css">
+<link rel="stylesheet" href="./components.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Vazirmatn:wght@400;700;800&display=swap">
+<style>
+body { background: var(--bg); color: var(--text); font-family: var(--font-fa); margin: 0; padding: 2rem; }
+.swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; }
+.swatch { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.swatch i { display: block; height: 64px; }
+.swatch span { display: block; padding: 0.5rem; font-size: 0.8rem; }
+.display { font-family: var(--font-display); font-size: 0.9rem; }
+.grid { display: grid; gap: 1.5rem; max-width: 900px; margin-inline: auto; }
+section { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 1.5rem; }
+</style>
+</head>
+<body>
+<main class="grid">
+<h1>pre fanam preview</h1>
+<section>
+<h2>colors</h2>
+<div class="swatches">
+<div class="swatch"><i style="background:#0B1026"></i><span>--night</span></div>
+<div class="swatch"><i style="background:#141B3D"></i><span>--panel</span></div>
+<div class="swatch"><i style="background:#F5B301"></i><span>--gold</span></div>
+<div class="swatch"><i style="background:#E03030"></i><span>--red</span></div>
+<div class="swatch"><i style="background:#2E7CF6"></i><span>--blue</span></div>
+<div class="swatch"><i style="background:#F4F1DE"></i><span>--paper</span></div>
+</div>
+</section>
+<section>
+<h2>type</h2>
+<p class="display">PRESS START 16BIT MUSEUM</p>
+<p>متن فارسی با قلم خوانا نمایش داده می شود</p>
+</section>
+<section>
+<h2>game frame</h2>
+<div class="game-frame"><button class="game-frame__start" type="button">start</button></div>
+</section>
+<section>
+<h2>game card</h2>
+<article class="game-card">
+<div class="game-card__cover"></div>
+<div style="padding:1rem">
+<span class="tag-chip">platformer</span>
+<h3>sample game</h3>
+</div>
+</article>
+</section>
+<section>
+<h2>newsletter</h2>
+<form class="newsletter-form"><input type="email" placeholder="email"><button type="submit">join</button></form>
+</section>
+</main>
+</body>
+</html>
