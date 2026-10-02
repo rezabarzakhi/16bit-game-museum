@@ -1,28 +1,20 @@
 ﻿{
   "tobu-tobu-girl": {
     "license": "MIT + CC BY 4.0",
-    "proof": "کد منبع: https://github.com/SimonLarsen/tobutobugirl/blob/master/LICENSE",
+    "proof": "لینک: https://github.com/SimonLarsen/tobutobugirl/blob/master/LICENSE",
     "source_url": "https://github.com/SimonLarsen/tobutobugirl",
     "itch_url": "https://tangramgames.itch.io/tobutobugirl",
     "author": "Tangram Games",
     "reviewed_at": "2026-10-02",
-    "notes": "کد منبع مجوز MIT و دارایی‌ها مجوز CC BY 4.0. بازی رایگان است و سازنده حمایت داوطلبانه می‌پذیرد."
+    "notes": "کد منبع با مجوز MIT و دارایی‌ها با مجوز CC BY 4.0. بازی به صورت رایگان توسط سازنده منتشر شده است."
   },
   "tobu-tobu-girl-dx": {
     "license": "MIT + CC BY 4.0",
-    "proof": "کد منبع: https://github.com/SimonLarsen/tobutobugirl-dx/blob/master/LICENSE",
+    "proof": "لینک: https://github.com/SimonLarsen/tobutobugirl-dx/blob/master/LICENSE",
     "source_url": "https://github.com/SimonLarsen/tobutobugirl-dx",
     "itch_url": "https://tangramgames.itch.io/tobu-tobu-girl-deluxe",
     "author": "Tangram Games",
     "reviewed_at": "2026-10-02",
     "notes": "نسخه بهبودیافته با گرافیک رنگی. مجوز مشابه نسخه اصلی."
-  },
-  "sample-game": {
-    "license": "CC0",
-    "proof": "نمونه اولیه برای بررسی چیدمان",
-    "source_url": "https://example.com",
-    "author": "Example Author",
-    "reviewed_at": "2026-10-02",
-    "notes": "نمونه نمایشی. فایل بازی واقعی ندارد."
   }
 }
