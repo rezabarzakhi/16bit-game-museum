@@ -16,5 +16,13 @@
     "author": "Tangram Games",
     "reviewed_at": "2026-10-02",
     "notes": "نسخه بهبودیافته با گرافیک رنگی. مجوز مشابه نسخه اصلی."
+  },
+  "geometrix": {
+    "license": "GPL v3",
+    "proof": "لینک: https://github.com/AntonioND/geometrix/blob/master/LICENSE.txt",
+    "source_url": "https://github.com/AntonioND/geometrix",
+    "author": "AntonioND/SkyLyrac",
+    "reviewed_at": "2026-10-02",
+    "notes": "بازی پازل با مجوز GPL v3. کد منبع آزادانه در دسترس است."
   }
 }
