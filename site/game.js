@@ -11,6 +11,10 @@ document.title = g.title + " | museum";
 document.getElementById("title").textContent = g.title;
 document.getElementById("console").textContent = g.console;
 document.getElementById("summary").textContent = g.summary;
+if (g.cover_path) {
+var cover = document.getElementById("cover");
+cover.innerHTML = "<img src=\"" + g.cover_path + "\" alt=\"" + g.title + "\" style=\"width:100%;max-height:200px;object-fit:cover;image-rendering:pixelated;border-radius:8px;\">";
+}
 var box = document.getElementById("controls");
 g.controls.forEach(function(c){
 var row = document.createElement("div");
@@ -38,23 +42,23 @@ document.getElementById("article").innerHTML = "<p>article placeholder for local
 document.getElementById("start").addEventListener("click", function(){
 var frame = document.getElementById("frame");
 frame.innerHTML = "";
-var note = document.createElement("p");
-note.style.color = "#F4F1DE";
-note.textContent = "loading emulator | core: " + g.emu_core + " | console: " + g.console;
-frame.appendChild(note);
+var loading = document.createElement("p");
+loading.style.color = "#F4F1DE";
+loading.textContent = "loading emulator...";
+frame.appendChild(loading);
 setTimeout(function(){
 frame.innerHTML = "";
-var note2 = document.createElement("p");
-note2.style.color = "#F4F1DE";
-note2.textContent = "emulator lazy load placeholder | core: " + g.emu_core + " | console: " + g.console + " | rom: " + (g.rom_path || "pending");
-frame.appendChild(note2);
+var note = document.createElement("p");
+note.style.color = "#F4F1DE";
+note.textContent = "emulator lazy load | core: " + g.emu_core + " | console: " + g.console;
+frame.appendChild(note);
 if (g.rom_path) {
 var iframe = document.createElement("iframe");
 iframe.src = g.rom_path;
 iframe.allow = "fullscreen";
 frame.appendChild(iframe);
 }
-}, 800);
+}, 1200);
 });
 document.getElementById("report").addEventListener("click", function(){
 document.getElementById("report-ok").hidden = false;

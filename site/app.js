@@ -16,11 +16,17 @@ var link = document.createElement("a");
 link.href = "./game.html?slug=" + encodeURIComponent(g.slug);
 var cover = document.createElement("div");
 cover.className = "game-card__cover";
+if (g.cover_path) {
+var img = document.createElement("img");
+img.src = g.cover_path;
+img.alt = g.title;
+img.style.cssText = "width:100%;height:100%;object-fit:cover;image-rendering:pixelated;";
+cover.appendChild(img);
+}
 var body = document.createElement("div");
 body.className = "game-card__body";
 var badge = document.createElement("span");
 badge.className = "console-badge";
-badge.style.cssText = "display:inline-block;background:var(--info);color:#fff;border-radius:6px;padding:0.15rem 0.5rem;font-size:0.7rem;font-weight:700;margin-bottom:0.4rem;";
 badge.textContent = g.console;
 var h = document.createElement("h3");
 h.textContent = g.title;
