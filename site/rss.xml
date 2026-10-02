@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>16bit game museum</title>
+<link>https://16bit.ir</link>
+<description>homebrew games archive</description>
+<item>
+<title>Sample Game</title>
+<link>https://16bit.ir/site/game.html?slug=sample-game</link>
+<description>Short editorial summary</description>
+</item>
+<item>
+<title>Pixel Quest</title>
+<link>https://16bit.ir/site/game.html?slug=pixel-quest</link>
+<description>Second placeholder entry for layout check</description>
+</item>
+<item>
+<title>Maze Runner</title>
+<link>https://16bit.ir/site/game.html?slug=maze-runner</link>
+<description>Third placeholder entry for layout check</description>
+</item>
+</channel>
+</rss>

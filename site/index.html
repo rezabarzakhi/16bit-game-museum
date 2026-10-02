@@ -10,19 +10,23 @@
 body { background: var(--bg); color: var(--text); font-family: var(--font-fa); margin: 0; padding: 2rem; }
 .wrap { max-width: 960px; margin-inline: auto; display: grid; gap: 1.5rem; }
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
-header { display: flex; justify-content: space-between; align-items: center; }
+header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
 a { color: var(--accent); }
 input[type="search"] { background: var(--night); border: 1px solid var(--border); color: var(--text); border-radius: 8px; padding: 0.75rem 1rem; width: 100%; }
+.filters { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.filter-btn { background: transparent; border: 1px solid var(--border); color: var(--text); border-radius: 999px; padding: 0.4rem 1rem; cursor: pointer; font-family: var(--font-fa); }
+.filter-btn.active { background: var(--accent); color: #0B1026; border-color: var(--accent); font-weight: 700; }
 </style>
 </head>
 <body>
 <div class="wrap">
-<header><strong>museum</strong><nav><a href="./index.html">home</a> | <a href="./about.html">about</a></nav></header>
+<header><strong>museum</strong><nav><a href="./index.html">home</a> | <a href="./about.html">about</a> | <a href="./legal.html">legal</a></nav></header>
 <h1>silent archive skeleton</h1>
 <input type="search" id="q" placeholder="search">
+<div class="filters" id="filters"></div>
 <div id="list" class="cards"></div>
 <div id="empty" class="empty-state" hidden>nothing found</div>
-<section><h2>newsletter</h2><form class="newsletter-form"><input type="email" placeholder="email"><button type="submit">join</button></form></section>
+<section><h2>newsletter</h2><form class="newsletter-form" id="nl"><input type="email" id="nl-email" placeholder="email" required><button type="submit">join</button></form><p id="nl-ok" hidden>subscribed</p></section>
 </div>
 <script src="./app.js"></script>
 </body>

@@ -1,0 +1,23 @@
+﻿{
+  "sample-game": {
+    "license": "CC0",
+    "proof": "Placeholder proof for local skeleton only",
+    "source_url": "https://example.com",
+    "author": "Example Author",
+    "reviewed_at": "2026-10-02"
+  },
+  "pixel-quest": {
+    "license": "CC-BY",
+    "proof": "Placeholder proof for local skeleton only",
+    "source_url": "https://example.com",
+    "author": "Second Author",
+    "reviewed_at": "2026-10-02"
+  },
+  "maze-runner": {
+    "license": "MIT",
+    "proof": "Placeholder proof for local skeleton only",
+    "source_url": "https://example.com",
+    "author": "Third Author",
+    "reviewed_at": "2026-10-02"
+  }
+}

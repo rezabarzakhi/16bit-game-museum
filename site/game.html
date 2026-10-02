@@ -11,6 +11,11 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-fa); m
 .wrap { max-width: 960px; margin-inline: auto; display: grid; gap: 1.5rem; }
 .meta { color: var(--muted); font-size: 0.85rem; }
 a { color: var(--accent); }
+.console-badge { display: inline-block; background: var(--info); color: #fff; border-radius: 6px; padding: 0.2rem 0.6rem; font-size: 0.75rem; font-weight: 700; }
+.emu-container { width: 100%; aspect-ratio: 4 / 3; background: #000; border: 4px solid var(--border); border-radius: var(--radius-md); display: grid; place-items: center; }
+.emu-container iframe { width: 100%; height: 100%; border: 0; }
+.license-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem; font-size: 0.85rem; color: var(--muted); }
+.license-box strong { color: var(--text); }
 </style>
 </head>
 <body>
@@ -18,20 +23,26 @@ a { color: var(--accent); }
 <a href="./index.html">back</a>
 <div id="empty" class="empty-state" hidden>nothing found sample</div>
 <article id="game" hidden>
-<h1 id="title"></h1>
+<div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;">
+<h1 id="title" style="margin:0;"></h1>
+<span class="console-badge" id="console"></span>
+</div>
 <p id="summary"></p>
 <p class="mobile-warning">better with desktop warning sample</p>
-<div class="game-frame" id="frame"><button class="game-frame__start" id="start" type="button">start</button></div>
+<div class="emu-container" id="frame"><button class="game-frame__start" id="start" type="button">start</button></div>
 <h2>controls</h2>
 <div class="control-guide" id="controls"></div>
 <h2>article</h2>
-<div class="article-body" id="article"><p>article placeholder for local skeleton</p></div>
+<div class="article-body" id="article"><p>loading article</p></div>
+<div class="license-box" id="license"></div>
 <p class="meta" id="meta"></p>
-<div id="tags"></div>
+<div id="tags" style="display:flex;gap:0.5rem;flex-wrap:wrap;"></div>
 <br>
-<button class="report-button" type="button">report</button>
+<button class="report-button" id="report" type="button">report</button>
+<div id="report-ok" class="empty-state" hidden>report received</div>
 </article>
 </div>
+<script src="./md-render.js"></script>
 <script src="./game.js"></script>
 </body>
 </html>
