@@ -32,5 +32,13 @@
                   "source_url":  "https://github.com/AntonioND/ucity",
                   "author":  "AntonioND/SkyLyrac",
                   "license":  "GPL v3+"
-              }
+              },
+    "brickster":  {
+                      "proof":  "لینک: https://rv6502.ca/post/2012/01/26/brickster-for-game-boy-color/",
+                      "notes":  "بازی به صورت رایگان برای دانلود، کپی، توزیع و بازی در فرم بدون تغییر منتشر شده است.",
+                      "reviewed_at":  "2026-10-02",
+                      "source_url":  "https://rv6502.ca/post/2012/01/26/brickster-for-game-boy-color/",
+                      "author":  "Stéphane Hockenhull (rv6502)",
+                      "license":  "Free to distribute"
+                  }
 }

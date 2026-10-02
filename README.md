@@ -37,6 +37,7 @@ roms/            فایل‌های بازی (در git نیست)
 Tobu Tobu Girl Deluxe (Game Boy Color) - MIT + CC BY 4.0
 Geometrix (Game Boy Color) - GPL v3
 uCity (Game Boy Color) - GPL v3+
+Brickster (Game Boy Color) - Free to distribute
 ```
 
 ## شبیه‌ساز

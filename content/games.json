@@ -97,5 +97,29 @@
         "emu_core":  "gb",
         "cover_path":  "covers/ucity.svg",
         "license":  "GPL v3+"
+    },
+    {
+        "source_url":  "https://rv6502.ca/post/2012/01/26/brickster-for-game-boy-color/",
+        "author":  "Stéphane Hockenhull (rv6502)",
+        "license_proof":  "بازی به صورت رایگان برای دانلود، کپی، توزیع و بازی منتشر شده است",
+        "controls":  [
+                         "جهت‌دار",
+                         "A",
+                         "Start"
+                     ],
+        "console":  "Game Boy Color",
+        "title":  "Brickster",
+        "tags":  [
+                     "puzzle",
+                     "arcade",
+                     "homebrew"
+                 ],
+        "rom_path":  "../roms/brickster.gbc",
+        "published":  "1999-01-01",
+        "summary":  "بازی آجرشکن برای گیم‌بوی کالر. بازی ساده و سرگرم‌کننده‌ای که در سال ۱۹۹۹ ساخته شده است.",
+        "slug":  "brickster",
+        "emu_core":  "gb",
+        "cover_path":  "covers/brickster.svg",
+        "license":  "Free to distribute"
     }
 ]
