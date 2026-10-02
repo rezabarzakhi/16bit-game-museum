@@ -36,6 +36,7 @@ roms/            فایل‌های بازی (در git نیست)
 ```text
 Tobu Tobu Girl Deluxe (Game Boy Color) - MIT + CC BY 4.0
 Geometrix (Game Boy Color) - GPL v3
+uCity (Game Boy Color) - GPL v3+
 ```
 
 ## شبیه‌ساز

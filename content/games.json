@@ -1,52 +1,101 @@
 ﻿[
-  {
-    "slug": "tobu-tobu-girl",
-    "title": "Tobu Tobu Girl",
-    "console": "Game Boy",
-    "summary": "بازی پلتفرمر-آرکید برای گیم‌بوی. نقش اصلی یک گربه است که باید از موانع عبور کند و به بالا صعود کند.",
-    "controls": ["جهت‌دار", "A", "Start"],
-    "cover_path": "covers/tobu-tobu-girl.svg",
-    "rom_path": "../roms/tobutobugirl.gb",
-    "emu_core": "gb",
-    "source_url": "https://github.com/SimonLarsen/tobutobugirl",
-    "itch_url": "https://tangramgames.itch.io/tobutobugirl",
-    "license": "MIT + CC BY 4.0",
-    "license_proof": "کد منبع: مجوز MIT و دارایی‌ها: مجوز CC BY 4.0",
-    "author": "Tangram Games",
-    "tags": ["platformer", "arcade", "homebrew"],
-    "published": "2017-12-01"
-  },
-  {
-    "slug": "tobu-tobu-girl-dx",
-    "title": "Tobu Tobu Girl Deluxe",
-    "console": "Game Boy Color",
-    "summary": "نسخه بهبودیافته بازی Tobu Tobu Girl با گرافیک رنگی و مراحل جدید.",
-    "controls": ["جهت‌دار", "A", "Start"],
-    "cover_path": "covers/tobu-tobu-girl-dx.svg",
-    "rom_path": "../roms/tobutobugirl-dx.gb",
-    "emu_core": "gb",
-    "source_url": "https://github.com/SimonLarsen/tobutobugirl-dx",
-    "itch_url": "https://tangramgames.itch.io/tobu-tobu-girl-deluxe",
-    "license": "MIT + CC BY 4.0",
-    "license_proof": "کد منبع: مجوز MIT و دارایی‌ها: مجوز CC BY 4.0",
-    "author": "Tangram Games",
-    "tags": ["platformer", "arcade", "homebrew"],
-    "published": "2018-12-01"
-  },
-  {
-    "slug": "geometrix",
-    "title": "Geometrix",
-    "console": "Game Boy Color",
-    "summary": "بازی پازل ساده برای گیم‌بوی. هدف ساخت ردیف یا ستون از ۳ فرم هندسی یکسان است.",
-    "controls": ["جهت‌دار", "A", "B", "Start"],
-    "cover_path": "covers/geometrix.svg",
-    "rom_path": "../roms/geometrix.gbc",
-    "emu_core": "gb",
-    "source_url": "https://github.com/AntonioND/geometrix",
-    "license": "GPL v3",
-    "license_proof": "کد منبع با مجوز GPL v3 منتشر شده است",
-    "author": "AntonioND/SkyLyrac",
-    "tags": ["puzzle", "homebrew"],
-    "published": "2015-01-01"
-  }
+    {
+        "slug":  "tobu-tobu-girl",
+        "title":  "Tobu Tobu Girl",
+        "console":  "Game Boy",
+        "summary":  "بازی پلتفرمر-آرکید برای گیم‌بوی. نقش اصلی یک گربه است که باید از موانع عبور کند و به بالا صعود کند.",
+        "controls":  [
+                         "جهت‌دار",
+                         "A",
+                         "Start"
+                     ],
+        "cover_path":  "covers/tobu-tobu-girl.svg",
+        "rom_path":  "../roms/tobutobugirl.gb",
+        "emu_core":  "gb",
+        "source_url":  "https://github.com/SimonLarsen/tobutobugirl",
+        "itch_url":  "https://tangramgames.itch.io/tobutobugirl",
+        "license":  "MIT + CC BY 4.0",
+        "license_proof":  "کد منبع: مجوز MIT و دارایی‌ها: مجوز CC BY 4.0",
+        "author":  "Tangram Games",
+        "tags":  [
+                     "platformer",
+                     "arcade",
+                     "homebrew"
+                 ],
+        "published":  "2017-12-01"
+    },
+    {
+        "slug":  "tobu-tobu-girl-dx",
+        "title":  "Tobu Tobu Girl Deluxe",
+        "console":  "Game Boy Color",
+        "summary":  "نسخه بهبودیافته بازی Tobu Tobu Girl با گرافیک رنگی و مراحل جدید.",
+        "controls":  [
+                         "جهت‌دار",
+                         "A",
+                         "Start"
+                     ],
+        "cover_path":  "covers/tobu-tobu-girl-dx.svg",
+        "rom_path":  "../roms/tobutobugirl-dx.gb",
+        "emu_core":  "gb",
+        "source_url":  "https://github.com/SimonLarsen/tobutobugirl-dx",
+        "itch_url":  "https://tangramgames.itch.io/tobu-tobu-girl-deluxe",
+        "license":  "MIT + CC BY 4.0",
+        "license_proof":  "کد منبع: مجوز MIT و دارایی‌ها: مجوز CC BY 4.0",
+        "author":  "Tangram Games",
+        "tags":  [
+                     "platformer",
+                     "arcade",
+                     "homebrew"
+                 ],
+        "published":  "2018-12-01"
+    },
+    {
+        "slug":  "geometrix",
+        "title":  "Geometrix",
+        "console":  "Game Boy Color",
+        "summary":  "بازی پازل ساده برای گیم‌بوی. هدف ساخت ردیف یا ستون از ۳ فرم هندسی یکسان است.",
+        "controls":  [
+                         "جهت‌دار",
+                         "A",
+                         "B",
+                         "Start"
+                     ],
+        "cover_path":  "covers/geometrix.svg",
+        "rom_path":  "../roms/geometrix.gbc",
+        "emu_core":  "gb",
+        "source_url":  "https://github.com/AntonioND/geometrix",
+        "license":  "GPL v3",
+        "license_proof":  "کد منبع با مجوز GPL v3 منتشر شده است",
+        "author":  "AntonioND/SkyLyrac",
+        "tags":  [
+                     "puzzle",
+                     "homebrew"
+                 ],
+        "published":  "2015-01-01"
+    },
+    {
+        "source_url":  "https://github.com/AntonioND/ucity",
+        "author":  "AntonioND/SkyLyrac",
+        "license_proof":  "کد منبع با مجوز GPL v3+ و دارایی‌ها با مجوز CC BY-SA 4.0",
+        "controls":  [
+                         "جهت‌دار",
+                         "A",
+                         "B",
+                         "Start"
+                     ],
+        "console":  "Game Boy Color",
+        "title":  "uCity",
+        "tags":  [
+                     "simulation",
+                     "city-builder",
+                     "homebrew"
+                 ],
+        "rom_path":  "../roms/ucity.gbc",
+        "published":  "2018-01-01",
+        "summary":  "بازی ساخت شهر برای گیم‌بوی کالر. شهر خود را بسازید و مدیریت کنید.",
+        "slug":  "ucity",
+        "emu_core":  "gb",
+        "cover_path":  "covers/ucity.svg",
+        "license":  "GPL v3+"
+    }
 ]

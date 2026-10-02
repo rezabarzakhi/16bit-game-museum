@@ -1,28 +1,36 @@
 ﻿{
-  "tobu-tobu-girl": {
-    "license": "MIT + CC BY 4.0",
-    "proof": "لینک: https://github.com/SimonLarsen/tobutobugirl/blob/master/LICENSE",
-    "source_url": "https://github.com/SimonLarsen/tobutobugirl",
-    "itch_url": "https://tangramgames.itch.io/tobutobugirl",
-    "author": "Tangram Games",
-    "reviewed_at": "2026-10-02",
-    "notes": "کد منبع با مجوز MIT و دارایی‌ها با مجوز CC BY 4.0. بازی به صورت رایگان توسط سازنده منتشر شده است."
-  },
-  "tobu-tobu-girl-dx": {
-    "license": "MIT + CC BY 4.0",
-    "proof": "لینک: https://github.com/SimonLarsen/tobutobugirl-dx/blob/master/LICENSE",
-    "source_url": "https://github.com/SimonLarsen/tobutobugirl-dx",
-    "itch_url": "https://tangramgames.itch.io/tobu-tobu-girl-deluxe",
-    "author": "Tangram Games",
-    "reviewed_at": "2026-10-02",
-    "notes": "نسخه بهبودیافته با گرافیک رنگی. مجوز مشابه نسخه اصلی."
-  },
-  "geometrix": {
-    "license": "GPL v3",
-    "proof": "لینک: https://github.com/AntonioND/geometrix/blob/master/LICENSE.txt",
-    "source_url": "https://github.com/AntonioND/geometrix",
-    "author": "AntonioND/SkyLyrac",
-    "reviewed_at": "2026-10-02",
-    "notes": "بازی پازل با مجوز GPL v3. کد منبع آزادانه در دسترس است."
-  }
+    "tobu-tobu-girl":  {
+                           "license":  "MIT + CC BY 4.0",
+                           "proof":  "لینک: https://github.com/SimonLarsen/tobutobugirl/blob/master/LICENSE",
+                           "source_url":  "https://github.com/SimonLarsen/tobutobugirl",
+                           "itch_url":  "https://tangramgames.itch.io/tobutobugirl",
+                           "author":  "Tangram Games",
+                           "reviewed_at":  "2026-10-02",
+                           "notes":  "کد منبع با مجوز MIT و دارایی‌ها با مجوز CC BY 4.0. بازی به صورت رایگان توسط سازنده منتشر شده است."
+                       },
+    "tobu-tobu-girl-dx":  {
+                              "license":  "MIT + CC BY 4.0",
+                              "proof":  "لینک: https://github.com/SimonLarsen/tobutobugirl-dx/blob/master/LICENSE",
+                              "source_url":  "https://github.com/SimonLarsen/tobutobugirl-dx",
+                              "itch_url":  "https://tangramgames.itch.io/tobu-tobu-girl-deluxe",
+                              "author":  "Tangram Games",
+                              "reviewed_at":  "2026-10-02",
+                              "notes":  "نسخه بهبودیافته با گرافیک رنگی. مجوز مشابه نسخه اصلی."
+                          },
+    "geometrix":  {
+                      "license":  "GPL v3",
+                      "proof":  "لینک: https://github.com/AntonioND/geometrix/blob/master/LICENSE.txt",
+                      "source_url":  "https://github.com/AntonioND/geometrix",
+                      "author":  "AntonioND/SkyLyrac",
+                      "reviewed_at":  "2026-10-02",
+                      "notes":  "بازی پازل با مجوز GPL v3. کد منبع آزادانه در دسترس است."
+                  },
+    "ucity":  {
+                  "proof":  "لینک: https://github.com/AntonioND/ucity/blob/master/LICENSE.txt",
+                  "notes":  "بازی ساخت شهر با مجوز GPL v3+. دارایی‌ها با مجوز CC BY-SA 4.0.",
+                  "reviewed_at":  "2026-10-02",
+                  "source_url":  "https://github.com/AntonioND/ucity",
+                  "author":  "AntonioND/SkyLyrac",
+                  "license":  "GPL v3+"
+              }
 }
