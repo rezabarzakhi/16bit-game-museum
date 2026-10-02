@@ -10,18 +10,19 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Vazirmatn:wght@400;700;800&display=swap">
 <style>
 body { background: var(--bg); color: var(--text); font-family: var(--font-fa); margin: 0; padding: 2rem; }
+.grid { display: grid; gap: 1.5rem; max-width: 960px; margin-inline: auto; }
+section { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 1.5rem; }
 .swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; }
 .swatch { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
 .swatch i { display: block; height: 64px; }
 .swatch span { display: block; padding: 0.5rem; font-size: 0.8rem; }
-.display { font-family: var(--font-display); font-size: 0.9rem; }
-.grid { display: grid; gap: 1.5rem; max-width: 900px; margin-inline: auto; }
-section { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 1.5rem; }
+.display { font-family: var(--font-display); font-size: 0.85rem; line-height: 2; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
 </style>
 </head>
 <body>
 <main class="grid">
-<h1>pre fanam preview</h1>
+<h1>design preview</h1>
 <section>
 <h2>colors</h2>
 <div class="swatches">
@@ -36,25 +37,44 @@ section { background: var(--surface); border: 1px solid var(--border); border-ra
 <section>
 <h2>type</h2>
 <p class="display">PRESS START 16BIT MUSEUM</p>
-<p>متن فارسی با قلم خوانا نمایش داده می شود</p>
+<p>متن فارسی با قلم خوانا نمایش داده می شود و عنوان انگلیسی با قلم نمایشی است</p>
 </section>
 <section>
 <h2>game frame</h2>
+<p class="mobile-warning">mobile warning sample</p>
 <div class="game-frame"><button class="game-frame__start" type="button">start</button></div>
+<br>
+<div class="game-frame__error">error sample with report <button class="report-button" type="button">report</button></div>
 </section>
 <section>
-<h2>game card</h2>
-<article class="game-card">
-<div class="game-card__cover"></div>
-<div style="padding:1rem">
-<span class="tag-chip">platformer</span>
-<h3>sample game</h3>
+<h2>control guide</h2>
+<div class="control-guide">
+<div class="control-guide__row"><span>move</span><span class="key">ARROWS</span></div>
+<div class="control-guide__row"><span>jump</span><span class="key">Z</span></div>
+<div class="control-guide__row"><span>pause</span><span class="key">ENTER</span></div>
 </div>
-</article>
+</section>
+<section>
+<h2>article</h2>
+<div class="article-body">
+<h2>sample title</h2>
+<p>sample paragraph with <a href="#">sample link</a> for readability check</p>
+</div>
+</section>
+<section>
+<h2>cards and tags</h2>
+<div class="cards">
+<article class="game-card"><div class="game-card__cover"></div><div class="game-card__body"><span class="tag-chip">platformer</span><h3>sample game</h3></div></article>
+<article class="game-card"><div class="game-card__cover"></div><div class="game-card__body"><span class="tag-chip">puzzle</span><h3>second game</h3></div></article>
+</div>
 </section>
 <section>
 <h2>newsletter</h2>
 <form class="newsletter-form"><input type="email" placeholder="email"><button type="submit">join</button></form>
+</section>
+<section>
+<h2>empty</h2>
+<div class="empty-state">nothing found sample</div>
 </section>
 </main>
 </body>

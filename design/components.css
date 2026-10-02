@@ -19,6 +19,48 @@
   outline: 3px solid var(--paper);
   outline-offset: 3px;
 }
+.game-frame__error {
+  color: var(--paper);
+  background: #2A1530;
+  border: 2px dashed var(--danger);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+}
+.control-guide {
+  display: grid;
+  gap: 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+.control-guide__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.key {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  background: var(--night);
+  border: 1px solid var(--border);
+  border-bottom-width: 3px;
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  color: var(--text);
+}
+.article-body {
+  line-height: 2;
+  color: var(--text);
+}
+.article-body h2 {
+  line-height: 1.6;
+  margin-top: 2rem;
+}
+.article-body a {
+  color: var(--accent);
+}
 .game-card {
   background: var(--surface);
   border: 2px solid var(--border);
@@ -29,6 +71,9 @@
   aspect-ratio: 4 / 3;
   background: #0B1026;
   image-rendering: pixelated;
+}
+.game-card__body {
+  padding: 1rem;
 }
 .tag-chip {
   border: 1px solid var(--border);
@@ -41,8 +86,58 @@
   display: flex;
   gap: 0.5rem;
 }
+.newsletter-form input {
+  flex: 1;
+  background: var(--night);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: var(--text);
+}
+.newsletter-form button {
+  background: var(--accent);
+  color: #0B1026;
+  font-weight: 800;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+}
+.report-button {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.empty-state {
+  text-align: center;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-md);
+  padding: 2rem 1rem;
+  color: var(--muted);
+}
+.mobile-warning {
+  display: none;
+  background: #2A2305;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+@media (max-width: 640px) {
+  .mobile-warning {
+    display: block;
+  }
+}
 .pixelated {
   image-rendering: pixelated;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--paper);
+  outline-offset: 2px;
 }
 @media (prefers-reduced-motion: reduce) {
   * {
