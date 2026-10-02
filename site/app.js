@@ -18,7 +18,7 @@ var cover = document.createElement("div");
 cover.className = "game-card__cover";
 if (g.cover_path) {
 var img = document.createElement("img");
-img.src = g.cover_path;
+img.src = "./" + g.cover_path;
 img.alt = g.title;
 img.style.cssText = "width:100%;height:100%;object-fit:cover;image-rendering:pixelated;";
 cover.appendChild(img);

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <title>شبیه‌ساز</title>
-<link rel="stylesheet" href="../design/tokens.css">
+<link rel="stylesheet" href="../../design/tokens.css">
 <style>
 body { background: #0B1026; color: #F4F1DE; font-family: "Vazirmatn", system-ui, sans-serif; margin: 0; padding: 1rem; }
 .wrap { max-width: 960px; margin-inline: auto; }
@@ -17,22 +17,22 @@ a { color: #F5B301; text-decoration: none; }
 <body>
 <div class="wrap">
 <header>
-<a href="./index.html">بازگشت</a>
-<strong id="game-title">شبیه‌ساز</strong>
+<a href="../index.html">خانه</a>
+<strong id="game-title">بازی</strong>
 </header>
 <div id="game"></div>
 </div>
 <script>
 var params = new URLSearchParams(location.search);
 var slug = params.get("slug") || "";
-fetch("../content/games.json").then(function(r){return r.json();}).then(function(games){
+fetch("../../content/games.json").then(function(r){return r.json();}).then(function(games){
 var g = null;
 games.forEach(function(x){ if (x.slug === slug) g = x; });
 if (!g) { document.getElementById("game-title").textContent = "بازی پیدا نشد"; return; }
 document.getElementById("game-title").textContent = g.title;
 var EJS_player = "#game";
 var EJS_core = g.emu_core || "auto";
-var EJS_gameUrl = g.rom_path || "";
+var EJS_gameUrl = g.rom_path ? "../../" + g.rom_path.replace(/^\.\.\//, "") : "";
 var EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
 var EJS_language = "fa";
 var EJS_startOnLoaded = true;

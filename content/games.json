@@ -23,7 +23,7 @@
     "summary": "نسخه بهبودیافته بازی Tobu Tobu Girl با گرافیک رنگی کامل و سازگاری با بازی جیبی و رنگی.",
     "controls": ["حرکت", "پرش", "شروع"],
     "cover_path": "covers/tobu-tobu-girl-dx.svg",
-    "rom_path": "../roms/tobutobugirl-dx.gbc",
+    "rom_path": "../roms/tobutobugirl-dx.gb",
     "emu_core": "gb",
     "source_url": "https://github.com/SimonLarsen/tobutobugirl-dx",
     "itch_url": "https://tangramgames.itch.io/tobu-tobu-girl-deluxe",

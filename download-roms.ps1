@@ -7,10 +7,10 @@ if (!(Test-Path $romsDir)) { New-Item -ItemType Directory -Path $romsDir }
 Write-Host "Downloading free homebrew games..."
 Write-Host "Source: Internet Archive (legal, free distribution)"
 
-# Tobu Tobu Girl - MIT + CC BY 4.0 license
+# Tobu Tobu Girl Deluxe - MIT + CC BY 4.0 license
 # Source: https://archive.org/details/tobudx
-$tobuUrl = "https://archive.org/download/tobudx/TobuTobuGirlDeluxe.gb"
-$tobuPath = Join-Path $romsDir "tobutobugirl-dx.gbc"
+$tobuUrl = "https://archive.org/download/tobudx/tobudx.gb"
+$tobuPath = Join-Path $romsDir "tobutobugirl-dx.gb"
 
 Write-Host "Downloading Tobu Tobu Girl Deluxe..."
 try {
