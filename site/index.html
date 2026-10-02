@@ -12,13 +12,16 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-fa); m
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
 header { display: flex; justify-content: space-between; align-items: center; }
 a { color: var(--accent); }
+input[type="search"] { background: var(--night); border: 1px solid var(--border); color: var(--text); border-radius: 8px; padding: 0.75rem 1rem; width: 100%; }
 </style>
 </head>
 <body>
 <div class="wrap">
 <header><strong>museum</strong><nav><a href="./index.html">home</a> | <a href="./about.html">about</a></nav></header>
 <h1>silent archive skeleton</h1>
+<input type="search" id="q" placeholder="search">
 <div id="list" class="cards"></div>
+<div id="empty" class="empty-state" hidden>nothing found</div>
 <section><h2>newsletter</h2><form class="newsletter-form"><input type="email" placeholder="email"><button type="submit">join</button></form></section>
 </div>
 <script src="./app.js"></script>
