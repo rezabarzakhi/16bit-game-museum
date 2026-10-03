@@ -1,100 +1,166 @@
 [
-    {
-        "slug":  "tobu-tobu-girl-dx",
-        "title":  "Tobu Tobu Girl Deluxe",
-        "console":  "Game Boy Color",
-        "summary":  "نسخه پیشرفته‌تر بازی Tobu Tobu Girl با گرافیک رنگی و مراحل جدید.",
-        "controls":  [
-                         "جهت‌دار",
-                         "A",
-                         "Start"
-                     ],
-        "cover_path":  "covers/tobu-tobu-girl-dx.png",
-        "rom_path":  "../roms/tobutobugirl-dx.gb",
-        "emu_core":  "gb",
-        "source_url":  "https://github.com/SimonLarsen/tobutobugirl-dx",
-        "itch_url":  "https://tangramgames.itch.io/tobu-tobu-girl-deluxe",
-        "license":  "MIT + CC BY 4.0",
-        "license_proof":  "کد منبع: مجوز MIT و دارایی‌ها: مجوز CC BY 4.0",
-        "author":  "Tangram Games",
-        "tags":  [
-                     "platformer",
-                     "arcade",
-                     "homebrew"
-                 ],
-        "published":  "2018-12-01"
-    },
-    {
-        "slug":  "geometrix",
-        "title":  "Geometrix",
-        "console":  "Game Boy Color",
-        "summary":  "بازی پازل هندسی رنگارنگ. باید شکل‌های هندسی را با چرخش جور کنید.",
-        "controls":  [
-                         "جهت‌دار",
-                         "A",
-                         "B",
-                         "Start"
-                     ],
-        "cover_path":  "covers/geometrix.png",
-        "rom_path":  "../roms/geometrix.gbc",
-        "emu_core":  "gbc",
-        "source_url":  "https://github.com/AntonioND/geometrix",
-        "license":  "GPL v3",
-        "license_proof":  "کد منبع با مجوز GPL v3 منتشر شده",
-        "author":  "AntonioND/SkyLyrac",
-        "tags":  [
-                     "puzzle",
-                     "homebrew"
-                 ],
-        "published":  "2015-01-01"
-    },
-    {
-        "slug":  "ucity",
-        "title":  "uCity",
-        "console":  "Game Boy Color",
-        "summary":  "بازی ساخت و مدیریت شهر. شهر خود را بسازید و مدیریت کنید.",
-        "controls":  [
-                         "جهت‌دار",
-                         "A",
-                         "B",
-                         "Start"
-                     ],
-        "cover_path":  "covers/ucity.png",
-        "rom_path":  "../roms/ucity.gbc",
-        "emu_core":  "gbc",
-        "source_url":  "https://github.com/AntonioND/ucity",
-        "license":  "GPL v3+",
-        "license_proof":  "کد منبع با مجوز GPL v3+ و دارایی‌ها با مجوز CC BY-SA 4.0",
-        "author":  "AntonioND/SkyLyrac",
-        "tags":  [
-                     "simulation",
-                     "city-builder",
-                     "homebrew"
-                 ],
-        "published":  "2018-01-01"
-    },
-    {
-        "slug":  "brickster",
-        "title":  "Brickster",
-        "console":  "Game Boy Color",
-        "summary":  "بازی پازل آجری کلاسیک. آجرها را با اتصال کنار هم ویران کنید.",
-        "controls":  [
-                         "جهت‌دار",
-                         "A",
-                         "Start"
-                     ],
-        "cover_path":  "covers/brickster.png",
-        "rom_path":  "../roms/brickster.gbc",
-        "emu_core":  "gbc",
-        "source_url":  "https://rv6502.ca/post/2012/01/26/brickster-for-game-boy-color/",
-        "license":  "Free to distribute",
-        "license_proof":  "سازنده به صورت رسمی توزیع رایگان بازی را تأیید کرده است",
-        "author":  "Stéphane Hockenhull (rv6502)",
-        "tags":  [
-                     "puzzle",
-                     "arcade",
-                     "homebrew"
-                 ],
-        "published":  "1999-01-01"
-    }
+  {
+    "slug": "tobu-tobu-girl-dx",
+    "title": "Tobu Tobu Girl Deluxe",
+    "console": "Game Boy Color",
+    "summary": "نسخه پیشرفته‌تر بازی Tobu Tobu Girl با گرافیک رنگی و مراحل جدید.",
+    "controls": [
+      {
+        "button": "جهت‌ها",
+        "key": "Arrow Left/Right",
+        "action": "حرکت و هدایت در هوا"
+      },
+      {
+        "button": "A",
+        "key": "X",
+        "action": "پرش و جت‌پک"
+      },
+      {
+        "button": "Start",
+        "key": "Enter",
+        "action": "شروع و مکث"
+      },
+      {
+        "button": "Select",
+        "key": "Shift",
+        "action": "انتخاب"
+      }
+    ],
+    "cover_path": "covers/tobu-tobu-girl-dx.png",
+    "rom_path": "../roms/tobutobugirl-dx.gb",
+    "emu_core": "gb",
+    "source_url": "https://github.com/SimonLarsen/tobutobugirl-dx",
+    "itch_url": "https://tangramgames.itch.io/tobu-tobu-girl-deluxe",
+    "license": "MIT + CC BY 4.0",
+    "license_proof": "کد منبع: مجوز MIT و دارایی‌ها: مجوز CC BY 4.0",
+    "author": "Tangram Games",
+    "tags": [
+      "platformer",
+      "arcade",
+      "homebrew"
+    ],
+    "published": "2018-12-01"
+  },
+  {
+    "slug": "geometrix",
+    "title": "Geometrix",
+    "console": "Game Boy Color",
+    "summary": "بازی پازل هندسی رنگارنگ. باید شکل‌های هندسی را با چرخش جور کنید.",
+    "controls": [
+      {
+        "button": "جهت‌ها",
+        "key": "Arrow keys",
+        "action": "حرکت مکان‌نما"
+      },
+      {
+        "button": "A",
+        "key": "X",
+        "action": "چرخش قطعه"
+      },
+      {
+        "button": "B",
+        "key": "Z",
+        "action": "تأیید و انداختن"
+      },
+      {
+        "button": "Start",
+        "key": "Enter",
+        "action": "شروع و مکث"
+      }
+    ],
+    "cover_path": "covers/geometrix.png",
+    "rom_path": "../roms/geometrix.gbc",
+    "emu_core": "gb",
+    "source_url": "https://github.com/AntonioND/geometrix",
+    "license": "GPL v3",
+    "license_proof": "کد منبع با مجوز GPL v3 منتشر شده",
+    "author": "AntonioND/SkyLyrac",
+    "tags": [
+      "puzzle",
+      "homebrew"
+    ],
+    "published": "2015-01-01"
+  },
+  {
+    "slug": "ucity",
+    "title": "uCity",
+    "console": "Game Boy Color",
+    "summary": "بازی ساخت و مدیریت شهر. شهر خود را بسازید و مدیریت کنید.",
+    "controls": [
+      {
+        "button": "جهت‌ها",
+        "key": "Arrow keys",
+        "action": "حرکت مکان‌نما روی نقشه"
+      },
+      {
+        "button": "A",
+        "key": "X",
+        "action": "انتخاب و ساخت"
+      },
+      {
+        "button": "B",
+        "key": "Z",
+        "action": "لغو و حذف"
+      },
+      {
+        "button": "Start",
+        "key": "Enter",
+        "action": "منو و مکث"
+      },
+      {
+        "button": "Select",
+        "key": "Shift",
+        "action": "تغییر ابزار"
+      }
+    ],
+    "cover_path": "covers/ucity.png",
+    "rom_path": "../roms/ucity.gbc",
+    "emu_core": "gb",
+    "source_url": "https://github.com/AntonioND/ucity",
+    "license": "GPL v3+",
+    "license_proof": "کد منبع با مجوز GPL v3+ و دارایی‌ها با مجوز CC BY-SA 4.0",
+    "author": "AntonioND/SkyLyrac",
+    "tags": [
+      "simulation",
+      "city-builder",
+      "homebrew"
+    ],
+    "published": "2018-01-01"
+  },
+  {
+    "slug": "brickster",
+    "title": "Brickster",
+    "console": "Game Boy Color",
+    "summary": "بازی پازل آجری کلاسیک. آجرها را با اتصال کنار هم ویران کنید.",
+    "controls": [
+      {
+        "button": "جهت چپ و راست",
+        "key": "Arrow Left/Right",
+        "action": "حرکت پد"
+      },
+      {
+        "button": "A",
+        "key": "X",
+        "action": "پرتاب توپ"
+      },
+      {
+        "button": "Start",
+        "key": "Enter",
+        "action": "شروع و مکث"
+      }
+    ],
+    "cover_path": "covers/brickster.png",
+    "rom_path": "../roms/brickster.gbc",
+    "emu_core": "gb",
+    "source_url": "https://rv6502.ca/post/2012/01/26/brickster-for-game-boy-color/",
+    "license": "Free to distribute",
+    "license_proof": "سازنده به صورت رسمی توزیع رایگان بازی را تأیید کرده است",
+    "author": "Stéphane Hockenhull (rv6502)",
+    "tags": [
+      "puzzle",
+      "arcade",
+      "homebrew"
+    ],
+    "published": "1999-01-01"
+  }
 ]

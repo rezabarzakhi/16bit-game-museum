@@ -20,10 +20,13 @@
       var cover = document.getElementById("cover");
       cover.innerHTML = "<img src=\"./" + g.cover_path + "\" alt=\"" + g.title + "\">";
     }
-    var box = document.getElementById("controls");
-    var ctrlHtml = "";
+    var box = document.getElementById('controls');
+    var ctrlHtml = '';
     if (g.controls && g.controls.length) {
-      ctrlHtml = g.controls.map(function(c){ return "<div class=\"control-guide__row\"><span>" + c + "</span><span class=\"key\" dir=\"ltr\">BTN</span></div>"; }).join("");
+      ctrlHtml = g.controls.map(function(c){
+        if (typeof c === 'string') { return '<div class=control-guide__row><span>' + c + '</span></div>'; }
+        return '<div class=control-guide__row><span>' + c.button + ' - ' + c.action + '</span><span class=key dir=ltr>' + c.key + '</span></div>';
+      }).join('');
     }
     box.innerHTML = ctrlHtml;
     var lic = licenseData[g.slug] || {};

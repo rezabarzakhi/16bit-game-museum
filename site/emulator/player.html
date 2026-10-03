@@ -12,7 +12,7 @@ body { background: radial-gradient(circle at 50% 0%, #1B2450 0%, #0B1026 60%); c
 .wrap { max-width: 960px; margin-inline: auto; display: grid; gap: 1rem; }
 a { color: #F5B301; text-decoration: none; }
 #game { width: 100%; aspect-ratio: 4/3; background: #000; position: relative; z-index: 1; }
-.hint { color: var(--muted); line-height: 2; font-size: 0.9rem; }
+.controls-card{background:var(--panel);border:3px solid #101018;border-radius:12px;padding:1rem 1.2rem;color:var(--text);} .controls-card h2{margin:0 0 .6rem;font-size:1rem;} .keymap{margin-top:.6rem;} .keymap summary{cursor:pointer;color:var(--accent);} .hint { color: var(--muted); line-height: 2; font-size: 0.9rem; }
 .load-error { background: #2A1530; border: 2px dashed var(--danger); border-radius: 12px; padding: 1.5rem; line-height: 2; }
 </style>
 </head>
@@ -48,6 +48,7 @@ a { color: #F5B301; text-decoration: none; }
 <div id="load-error" class="load-error" hidden></div>
 
 <p class="hint">کنترل با صفحه‌کلید انجام می‌شود. اگر بازی شروع نشد، اتصال اینترنت را برای بارگذاری هسته شبیه‌ساز بررسی کن. فایل بازی به صورت محلی خوانده می‌شود.</p>
+<section class=controls-card><h2>راهنمای دکمه ها</h2><div class=control-guide id=controls></div><details class=keymap><summary>صفحه کلید استاندارد گیم بوی</summary><div class=control-guide><div class=control-guide__row><span>حرکت</span><span class=key dir=ltr>Arrow keys</span></div><div class=control-guide__row><span>دکمه A</span><span class=key dir=ltr>X</span></div><div class=control-guide__row><span>دکمه B</span><span class=key dir=ltr>Z</span></div><div class=control-guide__row><span>استارت</span><span class=key dir=ltr>Enter</span></div><div class=control-guide__row><span>سلکت</span><span class=key dir=ltr>Shift</span></div></div></details></section>
 </div>
 <script>
 (function(){
@@ -72,8 +73,8 @@ fetch("../../content/games.json").then(function(r){
   document.title = g.title + " | سوپر شانزده بیت";
   var meta = document.getElementById("game-meta");
   if (meta) meta.textContent = g.console || "";
-  var romUrl = "../../" + g.rom_path.replace(/^\.\.\//, "");
-  var core = g.emu_core || (g.rom_path.slice(-4).toLowerCase() === ".gbc" ? "gbc" : "gb");
+  var cb=document.getElementById('controls');if(cb&&g.controls){var h='';g.controls.forEach(function(c){if(typeof c==='string'){h+='<div class=control-guide__row><span>'+c+'</span></div>';}else{h+='<div class=control-guide__row><span>'+c.button+' - '+c.action+'</span><span class=key dir=ltr>'+c.key+'</span></div>';}});cb.innerHTML=h;}var romUrl = "../../" + g.rom_path.replace(/^\.\.\//, "");
+  var core = 'gb';
   // EmulatorJS reads these from the global scope, so they must live on window.
   window.EJS_player = "#game";
   window.EJS_core = core;
