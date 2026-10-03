@@ -24,4 +24,19 @@
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 20px;
+
+  /* Super 16-bit console layer */
+  --snes-body: #D6D6DC;
+  --snes-body-shadow: #A9A9B8;
+  --snes-groove: #B9B9C7;
+  --snes-purple: #7A6AAE;
+  --snes-purple-deep: #463A6B;
+  --snes-dark: #23232E;
+  --btn-green: #3BB273;
+  --btn-yellow: #F5B301;
+  --crt-screen: #05070F;
+  --scanline: rgba(0, 0, 0, 0.24);
+  --cart-stripe-gb: #2E7CF6;
+  --cart-stripe-gbc: #7A6AAE;
+  --pixel: 4px;
 }

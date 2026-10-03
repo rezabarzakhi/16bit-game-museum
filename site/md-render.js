@@ -10,6 +10,7 @@
       if (!listMode) { html.push("<ul>"); listMode = true; }
       html.push("<li>" + esc(line.replace(/^[-*]\s+/, "")) + "</li>");
     }
+    else if (/^```/.test(line)) { closeList(); html.push("<pre dir=\"ltr\">"); }
     else if (line.trim() === "") { closeList(); }
     else { closeList(); html.push("<p>" + esc(line) + "</p>"); }
   });
@@ -19,3 +20,4 @@
 function esc(s) {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
+window.renderMarkdown = mdToHtml;
