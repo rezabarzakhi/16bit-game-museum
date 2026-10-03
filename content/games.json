@@ -1,30 +1,5 @@
 [
     {
-        "slug":  "tobu-tobu-girl",
-        "title":  "Tobu Tobu Girl",
-        "console":  "Game Boy",
-        "summary":  "بازی پلتفرمر-آرکید کلاسیک برای گیم‌بوی. نقش اصلی یک گربه است که باید از موانع عبور کند و به بالا صعود کند.",
-        "controls":  [
-                         "جهت‌دار",
-                         "A",
-                         "Start"
-                     ],
-        "cover_path":  "covers/tobu-tobu-girl.svg",
-        "rom_path":  "../roms/tobutobugirl.gb",
-        "emu_core":  "gb",
-        "source_url":  "https://github.com/SimonLarsen/tobutobugirl",
-        "itch_url":  "https://tangramgames.itch.io/tobutobugirl",
-        "license":  "MIT + CC BY 4.0",
-        "license_proof":  "کد منبع: مجوز MIT و دارایی‌ها: مجوز CC BY 4.0",
-        "author":  "Tangram Games",
-        "tags":  [
-                     "platformer",
-                     "arcade",
-                     "homebrew"
-                 ],
-        "published":  "2017-12-01"
-    },
-    {
         "slug":  "tobu-tobu-girl-dx",
         "title":  "Tobu Tobu Girl Deluxe",
         "console":  "Game Boy Color",
@@ -34,7 +9,7 @@
                          "A",
                          "Start"
                      ],
-        "cover_path":  "covers/tobu-tobu-girl-dx.svg",
+        "cover_path":  "covers/tobu-tobu-girl-dx.png",
         "rom_path":  "../roms/tobutobugirl-dx.gb",
         "emu_core":  "gb",
         "source_url":  "https://github.com/SimonLarsen/tobutobugirl-dx",
@@ -60,9 +35,9 @@
                          "B",
                          "Start"
                      ],
-        "cover_path":  "covers/geometrix.svg",
+        "cover_path":  "covers/geometrix.png",
         "rom_path":  "../roms/geometrix.gbc",
-        "emu_core":  "gb",
+        "emu_core":  "gbc",
         "source_url":  "https://github.com/AntonioND/geometrix",
         "license":  "GPL v3",
         "license_proof":  "کد منبع با مجوز GPL v3 منتشر شده",
@@ -84,9 +59,9 @@
                          "B",
                          "Start"
                      ],
-        "cover_path":  "covers/ucity.svg",
+        "cover_path":  "covers/ucity.png",
         "rom_path":  "../roms/ucity.gbc",
-        "emu_core":  "gb",
+        "emu_core":  "gbc",
         "source_url":  "https://github.com/AntonioND/ucity",
         "license":  "GPL v3+",
         "license_proof":  "کد منبع با مجوز GPL v3+ و دارایی‌ها با مجوز CC BY-SA 4.0",
@@ -108,9 +83,9 @@
                          "A",
                          "Start"
                      ],
-        "cover_path":  "covers/brickster.svg",
+        "cover_path":  "covers/brickster.png",
         "rom_path":  "../roms/brickster.gbc",
-        "emu_core":  "gb",
+        "emu_core":  "gbc",
         "source_url":  "https://rv6502.ca/post/2012/01/26/brickster-for-game-boy-color/",
         "license":  "Free to distribute",
         "license_proof":  "سازنده به صورت رسمی توزیع رایگان بازی را تأیید کرده است",

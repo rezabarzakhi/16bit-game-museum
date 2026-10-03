@@ -1,14 +1,5 @@
 {
     "games":  {
-                  "tobu-tobu-girl":  {
-                                         "license":  "MIT + CC BY 4.0",
-                                         "title":  "Tobu Tobu Girl",
-                                         "proof":  {
-                                                       "note":  "کد منبع با مجوز MIT است. دارایی‌ها (تصاویر و صداها) با مجوز CC BY 4.0 است. سازنده از انتشار مجدد استقبال می‌کند.",
-                                                       "source":  "https://github.com/SimonLarsen/tobutobugirl"
-                                                   },
-                                         "author":  "Tangram Games (Simon Larsen)"
-                                     },
                   "ucity":  {
                                 "license":  "GPL v3+",
                                 "title":  "uCity",

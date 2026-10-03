@@ -13,6 +13,7 @@ body { background: radial-gradient(circle at 50% 0%, #1B2450 0%, #0B1026 60%); c
 a { color: #F5B301; text-decoration: none; }
 #game { width: 100%; aspect-ratio: 4/3; background: #000; position: relative; z-index: 1; }
 .hint { color: var(--muted); line-height: 2; font-size: 0.9rem; }
+.load-error { background: #2A1530; border: 2px dashed var(--danger); border-radius: 12px; padding: 1.5rem; line-height: 2; }
 </style>
 </head>
 <body>
@@ -34,39 +35,59 @@ a { color: #F5B301; text-decoration: none; }
 
 <section class="crt" aria-label="تلویزیون">
 <div class="crt__screen">
-<div id="game"></div>
+<div id="game"><p style="color:#9AA3C7;">در حال بارگذاری شبیه‌ساز…</p></div>
 <div class="crt__glare"></div>
 </div>
 <div class="crt__bar">
 <span class="channel-badge" dir="ltr">CH-16</span>
-<span class="press-start">در حال بارگذاری</span>
+<span class="press-start" id="emu-status">در حال بارگذاری</span>
 <span id="game-meta"></span>
 </div>
 </section>
 
-<p class="hint">اگر بازی شروع نشد، اتصال اینترنت را برای بارگذاری هسته شبیه‌ساز بررسی کن. فایل بازی به صورت محلی خوانده می‌شود.</p>
+<div id="load-error" class="load-error" hidden></div>
+
+<p class="hint">کنترل با صفحه‌کلید انجام می‌شود. اگر بازی شروع نشد، اتصال اینترنت را برای بارگذاری هسته شبیه‌ساز بررسی کن. فایل بازی به صورت محلی خوانده می‌شود.</p>
 </div>
 <script>
+(function(){
 var params = new URLSearchParams(location.search);
 var slug = params.get("slug") || "";
-fetch("../../content/games.json").then(function(r){return r.json();}).then(function(games){
-var g = null;
-games.forEach(function(x){ if (x.slug === slug) g = x; });
-if (!g) { document.getElementById("game-title").textContent = "بازی پیدا نشد"; return; }
-document.getElementById("game-title").textContent = g.title;
-document.title = g.title + " | سوپر شانزده بیت";
-var meta = document.getElementById("game-meta");
-if (meta) meta.textContent = g.console || "";
-var EJS_player = "#game";
-var EJS_core = g.emu_core || "auto";
-var EJS_gameUrl = g.rom_path ? "../../" + g.rom_path.replace(/^\.\.\//, "") : "";
-var EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
-var EJS_startOnLoaded = true;
-var EJS_disableDatabases = true;
-var script = document.createElement("script");
-script.src = "https://cdn.emulatorjs.org/stable/data/loader.js";
-document.body.appendChild(script);
-});
+function fail(msg) {
+  var box = document.getElementById("load-error");
+  box.hidden = false;
+  box.textContent = msg;
+  document.getElementById("emu-status").textContent = "خطا";
+  document.getElementById("game").innerHTML = "";
+}
+fetch("../../content/games.json").then(function(r){
+  if (!r.ok) throw new Error("games.json");
+  return r.json();
+}).then(function(games){
+  var g = null;
+  games.forEach(function(x){ if (x.slug === slug) g = x; });
+  if (!g) { fail("بازی پیدا نشد."); return; }
+  if (!g.rom_path) { fail("فایل این بازی هنوز به آرشیو اضافه نشده است."); return; }
+  document.getElementById("game-title").textContent = g.title;
+  document.title = g.title + " | سوپر شانزده بیت";
+  var meta = document.getElementById("game-meta");
+  if (meta) meta.textContent = g.console || "";
+  var romUrl = "../../" + g.rom_path.replace(/^\.\.\//, "");
+  var core = g.emu_core || (g.rom_path.slice(-4).toLowerCase() === ".gbc" ? "gbc" : "gb");
+  // EmulatorJS reads these from the global scope, so they must live on window.
+  window.EJS_player = "#game";
+  window.EJS_core = core;
+  window.EJS_gameName = g.title;
+  window.EJS_gameUrl = romUrl;
+  window.EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+  window.EJS_startOnLoaded = true;
+  window.EJS_disableDatabases = true;
+  var script = document.createElement("script");
+  script.src = "https://cdn.emulatorjs.org/stable/data/loader.js";
+  script.onerror = function(){ fail("بارگذاری شبیه‌ساز از اینترنت ناموفق بود. اتصال را بررسی کن."); };
+  document.body.appendChild(script);
+}).catch(function(){ fail("خواندن فهرست بازی‌ها ناموفق بود."); });
+})();
 </script>
 </body>
 </html>
